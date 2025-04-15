@@ -9,7 +9,7 @@ async function bootstrap() {
     origin: ['https://sunbtc.vercel.app', 'http://localhost:5174'],
     methods: ['GET', 'POST', 'PUT'],
     allowedHeaders: ['Content-Type', 'Authorization'], 
-    credentials: true, // Cho phép gửi cookies và các dữ liệu xác thực khác (nếu có)
+    credentials: true, 
   };
   app.enableCors(corsOptions);
   app.useGlobalPipes(new ValidationPipe());
